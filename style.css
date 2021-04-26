@@ -1,0 +1,596 @@
+body{
+	margin: auto;
+	font-family: Arial, sans-serif;
+	background-color: lightgrey;
+	overflow-y: hidden;
+}
+img{
+	max-width: 97%;
+	height: auto;
+}
+p{
+	font-size: 50px;
+	font-weight: bolder;
+	color: #f1f1f1;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.bg {
+	height: 756px;
+	width: 1352px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background-color: white;
+}
+/*---DIRECTIONS--------------------------------------------------------------------------------------------------------*/
+
+.north-west{
+	z-index: 2;
+	position: relative;
+	border-style: none dashed dashed none;
+	border-width: 2px;
+	border-color: #f2f2f2;
+	height: 250px;
+	width: 450px;
+}
+.north-west p {
+	z-index: 2;
+	position: absolute;
+	left: 10px;
+}
+.north{
+	z-index: 2;
+	position: relative;
+	text-align: center;
+	height: 250px;
+	width: 450px;
+	top: -250px;
+	left: 450px;
+}
+.north-east{
+	z-index: 2;
+	position: relative;
+	border-style: none none dashed dashed;
+	border-width: 2px;
+	border-color: #f2f2f2;
+	height: 250px;
+	width: 450px;
+	top: -500px;
+	left: 900px;
+}
+.north-east p {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+.west{
+	z-index: 2;
+	position: relative;
+	height: 250px;
+	width: 265px;
+	top: -500px;
+}
+.west p {
+	z-index: 2;
+	position: absolute;
+	top: 40%;
+	left: 10px;
+}
+.east{
+	z-index: 2;
+	position: relative;
+	height: 250px;
+	width: 265px;
+	top: -750px;
+	left: 1085px;
+}
+.east p {
+	z-index: 2;
+	position: absolute;
+	top: 40%;
+	right: 10px;
+}
+.south-west{
+	z-index: 2;
+	position: relative;
+	border-style: dashed dashed none none;
+	border-width: 2px;
+	border-color: #f2f2f2;
+	height: 250px;
+	width: 450px;
+	top: -750px;
+
+}
+.south-west p {
+	z-index: 2;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+.south {
+	z-index: 2;
+	position: relative;
+	height: 250px;
+	width: 450px;
+	top: -1000px;
+	left: 450px;
+}
+.south p {
+	z-index: 2;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+}
+.south-east{
+	z-index: 2;
+	position: relative;
+	border-style: dashed none none dashed;
+	border-width: 2px;
+	border-color: #f2f2f2;
+	height: 250px;
+	width: 450px;
+	top: -1252px;
+	left: 900px;
+}
+.south-east p {
+	z-index: 2;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+/*-LETTER - G1----------------------------------------------------------------------------------------------------------*/
+
+.div-G1 {
+	height: 250px; 
+	width: 200px;
+	position: absolute;
+	z-index: 6;
+	top: 250px;
+	left: 265px;
+}
+.div-G1-n{
+	z-index: 10;
+	width: 140px;
+	position: absolute;
+	top: 317px;
+	left: 335px;
+	transform: rotate(-90deg);
+	transform-origin: 27px 27px;
+}
+
+.north-east:hover ~ .div-G1-n {
+	animation: rotate-Gone-NE 3s;
+}.east:hover ~ .div-G1-n {
+	animation: rotate-Gone-E 3s;
+}.south-east:hover ~ .div-G1-n {
+	animation: rotate-Gone-SE 3s;
+}.south:hover ~ .div-G1-n {
+	animation: rotate-Gone-S 3s;
+}.south-west:hover ~ .div-G1-n {
+	animation: rotate-Gone-SW 3s;
+}.west:hover ~ .div-G1-n {
+	animation: rotate-Gone-W 3s;
+}.north-west:hover ~ .div-G1-n {
+	animation: rotate-Gone-NW 3s;
+}
+
+@keyframes rotate-Gone-NE {
+	0%{transform: rotate(-90deg);}
+	10%{transform: rotate(-45deg);}
+	40%{transform: rotate(-45deg);}
+	100%{transform: rotate(-90deg);}
+}@keyframes rotate-Gone-E {
+	0%{transform: rotate(-90deg);}
+	10%{transform: rotate(0deg);}
+	40%{transform: rotate(0deg);}
+	100%{transform: rotate(-90deg);}
+}@keyframes rotate-Gone-SE {
+	0%{transform: rotate(-90deg);}
+	10%{transform: rotate(45deg);}
+	40%{transform: rotate(45deg);}
+	100%{transform: rotate(-90deg);}
+}@keyframes rotate-Gone-S {
+	0%{transform: rotate(-90deg);}
+	10%{transform: rotate(90deg);}
+	40%{transform: rotate(90deg);}
+	100%{transform: rotate(-90deg);}
+}@keyframes rotate-Gone-SW {
+	0%{transform: rotate(-90deg);}
+	10%{transform: rotate(135deg);}
+	40%{transform: rotate(135deg);}
+	100%{transform: rotate(-90deg);}
+}@keyframes rotate-Gone-W {
+	0%{transform: rotate(-90deg);}
+	10%{transform: rotate(180deg);}
+	40%{transform: rotate(180deg);}
+	100%{transform: rotate(-90deg);}
+}@keyframes rotate-Gone-NW {
+	0%{transform: rotate(-90deg);}
+	10%{transform: rotate(225deg);}
+	40%{transform: rotate(225deg);}
+	100%{transform: rotate(-90deg);}
+}
+
+/*-LETTER - O1----------------------------------------------------------------------------------------------------------*/
+
+.div-O1 {
+	height: 250px; 
+	width: 130px;
+	position: absolute;
+	z-index: 5;
+	top: 250px;
+	left: 465px;
+}
+.div-O1 img {
+	position: absolute;
+	top: 70px;
+}
+
+.north:hover ~ .div-O1 {
+	animation: rotate-OI 3s;
+}.north-east:hover ~ .div-O1 {
+	animation: rotate-OI 3s;
+}.east:hover ~ .div-O1 {
+	animation: rotate-OI 3s;
+}.south-east:hover ~ .div-O1 {
+	animation: rotate-OI 3s;
+}.south:hover ~ .div-O1 {
+	animation: rotate-OI 3s;
+}.south-west:hover ~ .div-O1 {
+	animation: rotate-OI 3s;
+}.west:hover ~ .div-O1 {
+	animation: rotate-OI 3s;
+}.north-west:hover ~ .div-O1 {
+	animation: rotate-OI 3s;
+}
+@keyframes rotate-OI {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(-10deg);}
+	30%{transform: rotate(10deg);}
+	100%{transform: rotate(0deg);}
+}
+
+/*-LETTER - O2----------------------------------------------------------------------------------------------------------*/
+
+.div-O2 {
+	height: 350px; 
+	width: 130px;
+	position: absolute;
+	top: 250px;
+	left: 595px;
+}
+.div-O2 img {
+	position: absolute;
+	top: 70px;
+	z-index: 5;
+	max-width: 100%;
+}
+.div-O2-n {
+	z-index: 3;
+	width: 400px;
+	position: absolute;
+	top: 352px;
+	left: 486px;
+}
+.div-O2-hider-left {
+	height: 290px;
+	width: 350px;
+	position: absolute;
+	top: 225px;
+	left: 245px;
+	background-color: white;
+	z-index: 4;
+}
+.div-O2-hider-right {
+	height: 290px;
+	width: 375px;
+	position: absolute;
+	top: 225px;
+	left: 725px;
+	background-color: white;
+	z-index: 4;
+}
+
+.north-east:hover ~ .div-O2-n {
+	animation: rotate-OII-NE 3s;
+}.east:hover ~ .div-O2-n {
+	animation: rotate-OII-E 4s;
+}.south-east:hover ~ .div-O2-n {
+	animation: rotate-OII-SE 5s;
+}.south:hover ~ .div-O2-n {
+	animation: rotate-OII-S 5s;
+}.south-west:hover ~ .div-O2-n {
+	animation: rotate-OII-SW 5s;
+}.west:hover ~ .div-O2-n {
+	animation: rotate-OII-W 4s;
+}.north-west:hover ~ .div-O2-n {
+	animation: rotate-OII-NW 3s;
+}
+
+@keyframes rotate-OII-SW {
+	0%{transform: translateX(0px);}
+	10%{transform: translateX(117px);}
+	60%{transform: translateX(117px);}
+	100%{transform: translateX(0px);}
+}
+@keyframes rotate-OII-W {
+	0%{transform: translateX(0px);}
+	10%{transform: translateX(78px);}
+	40%{transform: translateX(78px);}
+	100%{transform: translateX(0px);}
+}
+@keyframes rotate-OII-NW {
+	0%{transform: translateX(0px);}
+	10%{transform: translateX(39px);}
+	40%{transform: translateX(39px);}
+	100%{transform: translateX(0px);}
+}@keyframes rotate-OII-NE {
+	0%{transform: translateX(0px);}
+	10%{transform: translateX(-39px);}
+	40%{transform: translateX(-39px);}
+	100%{transform: translateX(0px);}
+}@keyframes rotate-OII-E {
+	0%{transform: translateX(0px);}
+	10%{transform: translateX(-78px);}
+	40%{transform: translateX(-78px);}
+	100%{transform: translateX(0px);}
+}@keyframes rotate-OII-SE {
+	0%{transform: translateX(0px);}
+	10%{transform: translateX(-117px);}
+	60%{transform: translateX(-117px);}
+	100%{transform: translateX(0px);}
+}@keyframes rotate-OII-S {
+	0%{transform: translateX(0px);}
+	10%{transform: translateX(-156px);}
+	60%{transform: translateX(-156px);}
+	100%{transform: translateX(0px);}
+}
+
+/*-LETTER - G2----------------------------------------------------------------------------------------------------------*/
+
+.div-G2 {
+	height: 250px; 
+	width: 130px;
+	position: absolute;
+	z-index: 5;
+	top: 250px;
+	left: 725px;
+}
+.div-G2 img {
+	position: absolute;
+	top: 40px;
+}
+.div-G2-n{
+	z-index: 10;
+	width: 20px;
+	position: absolute;
+	top: 339px;
+	left: 780px;
+	transform-origin: 52% 47%;
+}
+
+.north-east:hover ~ .div-G2-n {
+	animation: rotate-GE-NE 3s;
+}.east:hover ~ .div-G2-n {
+	animation: rotate-GE-E 3s;
+}.south-east:hover ~ .div-G2-n {
+	animation: rotate-GE-SE 3s;
+}.south:hover ~ .div-G2-n {
+	animation: rotate-GE-S 3s;
+}.south-west:hover ~ .div-G2-n {
+	animation: rotate-GE-SW 3s;
+}.west:hover ~ .div-G2-n {
+	animation: rotate-GE-W 3s;
+}.north-west:hover ~ .div-G2-n {
+	animation: rotate-GE-NW 3s;
+}
+
+@keyframes rotate-GE-NE {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(45deg);}
+	40%{transform: rotate(45deg);}
+	100%{transform: rotate(0deg);}
+}@keyframes rotate-GE-E {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(90deg);}
+	40%{transform: rotate(90deg);}
+	100%{transform: rotate(0deg);}
+}@keyframes rotate-GE-SE {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(135deg);}
+	40%{transform: rotate(135deg);}
+	100%{transform: rotate(0deg);}
+}@keyframes rotate-GE-S {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(180deg);}
+	40%{transform: rotate(180deg);}
+	100%{transform: rotate(0deg);}
+}@keyframes rotate-GE-SW {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(225deg);}
+	40%{transform: rotate(225deg);}
+	100%{transform: rotate(0deg);}
+}@keyframes rotate-GE-W {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(270deg);}
+	40%{transform: rotate(270deg);}
+	100%{transform: rotate(0deg);}
+}@keyframes rotate-GE-NW {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(315deg);}
+	40%{transform: rotate(315deg);}
+	100%{transform: rotate(0deg);}
+}
+
+/*-LETTER - L----------------------------------------------------------------------------------------------------------*/
+
+.div-L {
+	height: 250px; 
+	width: 130px;
+	position: absolute;
+	z-index: 5;
+	top: 250px;
+	left: 855px;
+}
+.div-L-n{
+	z-index: 10;
+	width: 40px;
+	position: absolute;
+	top: 410px;
+	left: 939px;
+}
+
+
+.north-east:hover ~ .div-L-n {
+	animation: rotate-L-NE 5s;
+}.east:hover ~ .div-L-n {
+	animation: rotate-L-E 5s;
+}.south-east:hover ~ .div-L-n {
+	animation: rotate-L-SE 5s;
+}.south:hover ~ .div-L-n {
+	animation: rotate-L-S 5s;
+}.south-west:hover ~ .div-L-n {
+	animation: rotate-L-SW 5s;
+}.west:hover ~ .div-L-n {
+	animation: rotate-L-W 5s;
+}.north-west:hover ~ .div-L-n {
+	animation: rotate-L-NW 5s;
+}
+
+
+@keyframes rotate-L-NE {
+	0%{transform: rotateY(0deg);}
+	10%{transform: rotateY(50deg);}
+	40%{transform: rotateY(50deg);}
+	100%{transform: rotateY(0deg);}
+}@keyframes rotate-L-E {
+	0%{transform: rotateY(0deg);}
+	10%{transform: rotateY(80deg);}
+	40%{transform: rotateY(80deg);}
+	100%{transform: rotateY(0deg);}
+}@keyframes rotate-L-SE {
+	0%{transform: rotateY(0deg);}
+	10%{transform: rotateY(140deg);}
+	40%{transform: rotateY(140deg);}
+	100%{transform: rotateY(0deg);}
+}@keyframes rotate-L-S {
+	0%{transform: rotateY(0deg);}
+	10%{transform: rotateY(180deg);}
+	40%{transform: rotateY(180deg);}
+	100%{transform: rotateY(0deg);}
+}@keyframes rotate-L-SW {
+	0%{transform: rotateY(0deg);}
+	10%{transform: rotateY(220deg);}
+	40%{transform: rotateY(220deg);}
+	100%{transform: rotateY(0deg);}
+}@keyframes rotate-L-W {
+	0%{transform: rotateY(0deg);}
+	10%{transform: rotateY(280deg);}
+	40%{transform: rotateY(280deg);}
+	100%{transform: rotateY(0deg);}
+}@keyframes rotate-L-NW {
+	0%{transform: rotateY(0deg);}
+	10%{transform: rotateY(310deg);}
+	40%{transform: rotateY(310deg);}
+	100%{transform: rotateY(0deg);}
+}
+
+/*-LETTER - E----------------------------------------------------------------------------------------------------------*/
+
+.div-E {
+	height: 250px; 
+	width: 100px;
+	position: absolute;
+	z-index: 5;
+	top: 250px;
+	left: 985px;
+}
+.div-E img {
+	position: absolute;
+	top: 70px;
+}
+.div-E-n{
+	z-index: 10;
+	width: 10px;
+	position: absolute;
+	top: 387.5px;
+	left: 1028.5px;
+	transform-origin: 52% 47%;
+}
+
+.north-east:hover ~ .div-E-n {
+	animation: rotate-GE-NE 3s;
+}.east:hover ~ .div-E-n {
+	animation: rotate-GE-E 3s;
+}.south-east:hover ~ .div-E-n {
+	animation: rotate-GE-SE 3s;
+}.south:hover ~ .div-E-n {
+	animation: rotate-GE-S 3s;
+}.south-west:hover ~ .div-E-n {
+	animation: rotate-GE-SW 3s;
+}.west:hover ~ .div-E-n {
+	animation: rotate-GE-W 3s;
+}.north-west:hover ~ .div-E-n {
+	animation: rotate-GE-NW 3s;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*
+.north-west:hover + .div-G1-n {
+	animation-play-state: running;
+}
+
+
+@keyframes rotate-GE {
+	from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-90deg);
+    }
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(-45deg);}
+	100%{transform: rotate(0deg);}
+}
+@keyframes all-O1 {
+	0%{transform: rotate(0deg);}
+	10%{transform: rotate(90deg);}
+	20%{transform: rotate(-90deg);}
+	100%{transform: rotate(0deg);}
+}
+
+@keyframes east-O2 {
+	0%{transform: translateX(0px);}
+	10%{transform: translateX(60px);}
+	100%{transform: translateX(0px);}
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
